@@ -30,6 +30,7 @@ export default function Home() {
                 className={styles.input}
                 placeholder="Type your medical report here"
               />
+
               <button className={styles.button}>Submit</button>
             </form>
           </div>
