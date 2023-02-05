@@ -6,12 +6,6 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  function handleSubmit(event) {
-    event.preventDefault();
-    const data = new FormData(event.target);
-    console.log(data.get("medicalReport"));
-  }
-
   return (
     <>
       <Head>
