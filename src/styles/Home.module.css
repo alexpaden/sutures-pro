@@ -76,10 +76,6 @@
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   padding: 4rem 0;
 }
 
@@ -107,21 +103,19 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
-  position: relative;
-}
-
 .form {
   width: 350px;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
   width: 350px;
   height: 200px;
   border-radius: 10px;
-  padding: 2rem;
   display: block;
 }
 
@@ -130,10 +124,10 @@
   height: 50px;
   margin-top: 3rem;
   border-radius: 10px;
+  align-self: center;
   background-color: greenyellow;
   color: black;
   font-weight: bolder;
-  display: block;
 }
 
 .thirteen {
@@ -141,8 +135,7 @@
   justify-content: center;
   align-items: center;
   width: 750px;
-  height: 300px;
-  margin-left: 16px;
+  height: 400px;
   transform: translateZ(0);
   border-radius: var(--border-radius);
   overflow: hidden;
