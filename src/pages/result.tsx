@@ -1,9 +1,16 @@
-import { NextPage } from "next";
+import { useRouter } from "next/router";
+import styles from "@/styles/Home.module.css";
+import React from "react";
 
-interface Props {}
+const Result = () => {
+  const router = useRouter();
+  const { result } = router.query;
 
-const Result: NextPage<Props> = ({}) => {
-  return <div>dsdsd</div>;
+  return (
+    <div>
+      <p>{result}</p>
+    </div>
+  );
 };
 
 export default Result;

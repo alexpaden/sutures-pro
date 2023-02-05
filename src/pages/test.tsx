@@ -1,7 +1,5 @@
-import { useState } from "react";
 import axios from "axios";
 import Router from "next/router";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 
 const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
