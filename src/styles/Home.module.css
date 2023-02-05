@@ -106,10 +106,13 @@
 .form {
   width: 350px;
   height: auto;
+}
+
+.formcenter {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .input {
@@ -117,6 +120,7 @@
   height: 200px;
   border-radius: 10px;
   display: block;
+  padding: 10px;
 }
 
 .button {
@@ -128,6 +132,7 @@
   background-color: greenyellow;
   color: black;
   font-weight: bolder;
+  display: block;
 }
 
 .thirteen {
