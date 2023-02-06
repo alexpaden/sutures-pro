@@ -12,12 +12,22 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
-    prompt: "Hello world",
+    //input: "The patient ",
+    //instructions: "Explain this medical report to a layman in 3 sentences",
+    //n: 2,
+    temperature: 0.33,
+    //top_p: 0.15,
+    max_tokens: 1000,
+    prompt:
+      "Explain this medical report to a layman in 3 sentences, beginning with 'the patient is' '''" +
+      medicalReport.toString(),
   });
+  console.log("-------000-----------");
+  console.log(completion.data.choices[0]);
+  console.log("---------111---------");
+  //console.log(completion.data.choices);
 
-  console.log(completion.data.choices[0].text);
-
-  res.status(200).json(medicalReport + "!");
+  res.status(200).json(completion.data.choices[0].text);
 };
 
 // options for the medical report
