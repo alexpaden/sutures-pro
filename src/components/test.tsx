@@ -33,6 +33,7 @@ const MedicalReportForm = () => {
           <button className={styles.button} type="submit">
             Submit
           </button>
+          <span>**loading is slow after submit**</span>
         </form>
       </div>
     </div>
