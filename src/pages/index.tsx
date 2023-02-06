@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import MedicalReportForm from "@/components/test";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,19 +23,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.center}>
-          <div className={styles.thirteen}>
-            <form className={`${styles.form} ${styles.formcenter}`}>
-              <input
-                name="medicalReport"
-                type="textarea"
-                className={styles.input}
-                placeholder="Type your medical report here"
-              />
-              <button className={styles.button}>Submit</button>
-            </form>
-          </div>
-        </div>
+        <MedicalReportForm />
 
         <div className={styles.grid}>
           <a className={styles.card}>

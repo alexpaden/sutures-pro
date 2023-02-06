@@ -15,9 +15,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     //input: "The patient ",
     //instructions: "Explain this medical report to a layman in 3 sentences",
     //n: 2,
-    temperature: 0.33,
+    temperature: 0.25,
     //top_p: 0.15,
-    max_tokens: 1000,
+    max_tokens: 300,
     prompt:
       "Explain this medical report to a layman in 3 sentences, beginning with 'the patient is' '''" +
       medicalReport.toString(),
