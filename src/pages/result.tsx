@@ -7,8 +7,10 @@ const Result = () => {
   const { result } = router.query;
 
   return (
-    <div>
-      <p>{result}</p>
+    <div className={styles.center}>
+      <div className={styles.thirteen}>
+        <span className={styles.result}>{result}</span>
+      </div>
     </div>
   );
 };

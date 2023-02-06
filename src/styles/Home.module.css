@@ -135,10 +135,18 @@
   display: block;
 }
 
+.result {
+  color: white;
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
 .thirteen {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding: 5px;
   width: 750px;
   height: 400px;
   transform: translateZ(0);
