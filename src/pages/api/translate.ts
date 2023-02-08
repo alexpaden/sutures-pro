@@ -15,16 +15,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     //input: "The patient ",
     //instructions: "Explain this medical report to a layman in 3 sentences",
     //n: 2,
-    temperature: 0.25,
+    temperature: 0.75,
     //top_p: 0.15,
-    max_tokens: 300,
+    max_tokens: 700,
     prompt:
-      "Explain this medical report to a layman in 3 sentences, beginning with 'the patient is' '''" +
+      "Convert this radiology report to an easy to understand summary. Thoroughly explain all medical terminology, and beginning with 'the patient is' '''" +
       medicalReport.toString(),
   });
-  console.log("-------000-----------");
-  console.log(completion.data.choices[0]);
-  console.log("---------111---------");
   //console.log(completion.data.choices);
 
   res.status(200).json(completion.data.choices[0].text);
